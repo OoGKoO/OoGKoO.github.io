@@ -6,7 +6,7 @@ html,body{
 }
 @font-face{
 	font-family:'Earth_Orbiter';
-	src:url("/static/font/Earth_Orbiter.ttf");
+	src:url("../../font/Earth_Orbiter.ttf");
 	}
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
