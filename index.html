@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0" name="viewport">
+	<title>My Home</title>
+	<link rel="shortcut icon" href="img/index/marx.png">
+	<link rel="stylesheet" type="text/css" href="css/index/index.css" />
+	<link rel="stylesheet" href="css/index/APlayer.min.css">
+</head>
+
+<body>
+	<div id="panel"></div>
+	<div id='weather' class="iUp">
+		天气获取中...
+	</div>
+	<img id="head_icon" class="iUp" src="img/index/head_icon.jpg">
+	<p id="name" class="iUp">冷溪凌寒</p>
+	<p id="from" class="iUp">Les Coeurs Révolutionnaires</p>
+	<hr class="iUp">
+	<div id="yiyan" class="iUp">
+		少女祈祷中...
+	</div>
+	<div id="search">
+		<div id="search_choose_box" class="iUp">
+			<img id="search_choose_icon_chrome" src="img/index/chrome.png"
+				onclick="choose_chrome()">
+			<img id="search_choose_icon_edge" src="img/index/edge.png"
+				onclick="choose_edge()">
+			<img id="search_choose_icon_baidu" src="img/index/baidu.png"
+				onclick="choose_baidu()">
+		</div>
+		<div id="search_box" class="iUp">
+			<input type="text" id="search_text" placeholder="Bing搜索..." />
+			<img id="search_btn" src="img/index/search.png" onclick="search()">
+		</div>
+
+	</div>
+	<div class="btn_box iUp">
+		<a class="btn" href="/">
+			<h5>首页</h5>
+		</a>
+		<a class="btn" href="https://www.cnblogs.com/OoGKoO/">
+			<h5>博客</h5>
+		</a>
+		<a class="btn" href="daka">
+			<h5>打卡</h5>
+		</a>
+		<a class="btn" href="https://fanyi.youdao.com/">
+			<h5>翻译</h5>
+		</a>
+	</div>
+	<div class="icon_box iUp">
+		<img class="icon" src="img/index/bilibili.png" title="bilibili"
+			onclick="window.open('https://space.bilibili.com/10034792')">
+		<img class="icon" src="img/index/tieba.png" title="贴吧"
+			onclick="window.open('https://tieba.baidu.com/home/main?id=tb.1.81df02fe.LO87oGzpBoPLHiDhsIQEQA?t=1586583919&fr=index')">
+		<img class="icon" src="img/index/github.png" title="GitHub"
+			onclick="window.open('https://github.com/OoGKoO')">
+		<img class="icon" src="img/index/steam.png" title="Steam"
+			onclick="window.open('https://steamcommunity.com/profiles/76561198142118855')">
+	</div>
+	<div id="player" class="aplayer aplayer-withlist aplayer-fixed iUp" data-id="2413819766" data-server="netease"
+		data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="#2D8CF0"></div>
+	<!-- data-id为歌单ID -->
+
+	<div class="remake" class="iUp">
+		<div id="qq_box" class="iUp">
+			<img src="img/index/qq.png" id="qq_icon">
+			<p id="qq"> ：1493254525</p>
+		</div>
+		<p id="power" class="iUp">Powered By
+			<a href="https://tianqiapi.com/" target="_blank"> TianqiAPI </a> And
+			<a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
+		</p>
+		
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/isMobile.js"></script>
+	<script src="js/mouse_click.js"></script>
+	<script type="text/javascript" src="js/index/index.js"></script>
+	<script src="js/APlayer/APlayer.min.js"></script>
+	<script src="js/APlayer/Meting.min.js"></script>
+</body>
+
+</html>

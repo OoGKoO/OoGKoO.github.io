@@ -1,0 +1,273 @@
+*{margin:0;padding:0;}
+html,body{
+    height: 100%;
+    width:100%;
+    overflow:hidden
+}
+@font-face{
+	font-family:'Earth_Orbiter';
+	src:url("/static/font/Earth_Orbiter.ttf");
+	}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+#panel{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	filter:brightness(0.45);
+	background-color: #89949B;
+	/* background: url(https://bing.ioliu.cn/v1/rand) center center no-repeat #666; */
+
+}
+#weather{
+	position: absolute;
+	top: 0;
+	bottom: 800px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	color:#ffffff;
+	font-size: 20px;
+}
+#head_icon{
+	position:absolute;
+	top: 0;
+	bottom: 400px;
+	left: 0;
+	right: 0;
+	width: 125px;
+	height: 125px;
+	margin: auto;
+	border:2px solid white;
+	border-radius: 50%;
+}
+#head_icon:hover{
+	animation: volve 0.25s infinite linear;
+}
+@keyframes volve{
+	0%{transform:rotate(0deg);}
+	25%{transform: rotate(30deg);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0deg);}
+}
+#name{
+	position: absolute;
+	top: 0;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	color:#ffffff;
+	font-size: 30px;
+}
+#from{
+	position: absolute;
+	top: 0;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	color:#ffffff;
+	font-size: 20px;
+	font-family:'Earth_Orbiter';
+}
+hr{
+	position: absolute;
+	top: 0;
+	bottom:50px;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height:0;
+	margin:auto;
+	padding:auto;
+}
+#yiyan{
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	color:#ffffff;
+	font-size: 18px;
+	font-style:italic;
+}
+#search_choose_box{
+	position: absolute;
+	top: 280px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height: 35px;
+	margin: auto;
+	text-align: center;
+}
+#search_choose_box img{
+	width: 25px;
+	margin: auto;
+	margin-left: 25px;
+	margin-right: 25px;
+	line-height: 100px;
+	cursor: pointer;
+	border-radius: 40px;
+	padding: 1px;
+}
+#search_choose_icon_edge{
+	border: 2px solid white;
+}
+#search_box{
+	position: absolute;
+	margin: auto;
+	top: 350px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 2px solid white;
+	border-radius: 50px;
+	width: 340px;
+	height: 35px;
+}
+#search_text{
+	width: 340px;
+	height: 35px;
+	margin: auto;
+	text-align: center;
+	background-color:transparent;border:0;
+	font-size: 16px;
+	color:lightgray;
+	outline: none;
+}
+#search_btn{
+	position: absolute;
+/*	top: 350px;
+*/
+	top: 0;
+	bottom: 0;
+	left: 300px;
+	right: 0;
+	width: 25px;
+	margin: auto;
+	line-height: 30px;
+	cursor: pointer;
+}
+.btn_box{
+	position: absolute;
+	width: 350px;
+	height: 100px;
+	top: 650px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	display: flex;
+}
+.btn{
+	border: 2px solid white;
+	border-radius: 50px/40px;
+	width: 75px;
+	height: 35px;
+	margin: auto;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	cursor: pointer;
+	text-decoration:none;
+}
+.icon_box{
+	position: absolute;
+	width: 250px;
+	height: 100px;
+	top: 800px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	display: flex;
+}
+.icon{
+	width: 25px;
+	margin: auto;
+	line-height: 30px;
+	cursor: pointer;
+}
+.remake{
+	position: absolute;
+	text-align: right;
+	bottom: 5px;
+	right: 20px;
+	margin: auto;
+}
+#qq{
+	float: right;
+	color:lightgray;
+	font-size: 10px;
+}
+#qq_icon{
+	width: 18px;
+	margin: auto;
+	cursor: pointer;
+}
+#power{
+	color:lightgray;
+	font-size: 10px;
+}
+#power a{
+	color:cadetblue;
+	text-decoration:none;
+}
+#power a:hover{
+  text-decoration:underline;
+}
+#beian a{
+	color:lightgray;
+	font-size: 10px;
+	text-decoration:none;
+}
+#beian a:hover{
+  text-decoration:underline;
+}
+#music{
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+
+.panel-cover--collapsed .iUp {
+  -webkit-transition: all 0 cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 0 cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0 cubic-bezier(0.19, 1, 0.22, 1)
+}
+.iUp {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 80px, 0);
+  -moz-transform: translate3d(0, 80px, 0);
+  -ms-transform: translate3d(0, 80px, 0);
+  -o-transform: translate3d(0, 80px, 0);
+  transform: translate3d(0, 80px, 0);
+  -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1)
+}
+.iUp.up {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
+}
