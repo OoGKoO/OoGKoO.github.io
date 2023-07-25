@@ -44,7 +44,7 @@ $(document).ready(function () {				// 所有物品淡入
 	}
 
 
-	fetch('https://tianqiapi.com/api?unescape=1&version=v6&appid=77525287&appsecret=rh1OES5j').then(function (res) {				//获取天气接口
+	fetch('https://v0.yiketianqi.com/api?unescape=1&version=v61&appid=77525287&appsecret=rh1OES5j').then(function (res) {				//获取天气接口
 		return res.json();
 	}).then(function (w) {
 		$('#weather').html(w.city + " " + w.wea + " " + w.tem + "℃");
